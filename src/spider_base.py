@@ -42,9 +42,9 @@ class SessionBase(SpiderBase):
         if base_type == 1 and kwargs.get("cookie") and kwargs.get("token"):
             self.__appmsg_init__(**kwargs)
         elif base_type == 2 and kwargs.get("key") and kwargs.get("secret"):
-            self.__thirdpart_init(**kwargs)
+            self.__thirdpart_init__(**kwargs)
         else:
-            raise RuntimeError(f"require necessary attr")
+            raise RuntimeError(f"required some args")
         # self.__config_init__()
 
     @classmethod
@@ -76,7 +76,7 @@ class SessionBase(SpiderBase):
             "ajax": "1"
         }
 
-    def __thirdpart_init(self, key: str = None, secret: str = None, **kwargs):
+    def __thirdpart_init__(self, key: str = None, secret: str = None, **kwargs):
         """
         第三方账号获取公众号列表
         :return:
