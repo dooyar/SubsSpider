@@ -75,7 +75,9 @@ def downloader(url, save_path):
 
 
 def save_page(db, table, pages):
-    """数据入库"""
+    """
+    数据入库
+    """
     with db.engine.connect() as conn:
         with conn.begin():
             for page in pages:
@@ -87,7 +89,7 @@ def save_page(db, table, pages):
 
 def load_yaml():
     """
-    load src config for yaml file
+    load config for yaml file
     :return:
     """
     conf_name = "spider.yaml"

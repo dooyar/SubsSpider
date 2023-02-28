@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re
+import os
 import dateparser
+
+
 DB_ENGINE = 'postgresql+psycopg2'
 DB_HOST = 'localhost'
 DB_PORT = 56000
 DB_NAME = 'postgres'
 DB_USERNAME = 'postgres'
 DB_PASSWORD = 'pPePFjqM'
-# FILE_SAVE_PATH = '/var/www/src'
-FILE_SAVE_PATH = '/Users/rukiyoo/spider_doc'
+FILE_SAVE_PATH = os.path.join(os.path.expandvars('$HOME'), "spider_doc")
 DATETIME_REGEXES = [
     "(\d{4}[-|/|.]\d{1,2}[-|/|.]\d{1,2}\s*?[0-1]?[0-9]:[0-5]?[0-9]:[0-5]?[0-9])",
     "(\d{4}[-|/|.]\d{1,2}[-|/|.]\d{1,2}\s*?[2][0-3]:[0-5]?[0-9]:[0-5]?[0-9])",
