@@ -1,0 +1,9 @@
+
+# 公众号爬虫相关配置
+subscription:
+  base_type: 2  # 文章列表获取方式: [1] 公众号账号  [2] 第三方(极致了数据) - 任选一
+  cookie: "pgv_pvid=8797564614; RK=HC7JaFOvMK; ptcz=50bc99ae87455b6d6f75e4d7c7071ea4d735d1681f2b74d16e0beae9999ee19f; livelink_pvid=1497191424; tvfe_boss_uuid=3575bb8c958ae8db; pac_uid=0_437a82585eb72; ua_id=g11ZtUKiPCLtIv67AAAAANy5qovUVO5YdVqMFZRcG7c=; wxuin=72818509214784; mm_lang=zh_CN; noticeLoginFlag=1; remember_acct=ruitong0120%40gmail.com; uuid=5c614f446a2f2688a9ca6b687a798915; rand_info=CAESIIvRZ5PY30P25F1V+nIN5T9p94gB31JagcF8B+Iod7g2; slave_bizuin=3903441965; data_bizuin=3903441965; bizuin=3903441965; data_ticket=uR1wpiwm4tCxnzYAJmvRLwdui5auqzH68WKdvWU7zyfDGOd8PYgKazdh//5lAcJi; slave_sid=aWhVdF9SdlNkS2Nvb1BVTmd4dlJ6Nk1Ibk8zVHo1VWhuOXVqUTJxUHI1N3JqVlBITzEzYUZnOTNvYkQyZzdiY2pseGJJSWxkdzRWaENMdzFEdTFidXJxMUo1ZE1FR2gwYktVTGgyTzRpUzRRcjZDZlNhcld1ZE9ybHdqVjRBRGRUN004ZG91NThTMjJka2li; slave_user=gh_97250be722ff; xid=ff2dc4e34a54d767756638ac6fd35e37"  # [1] 公众号账号所需的 cookie
+  token: 1469245874  # [1] 公众号账号所需的 token
+  key: "JZL0856b08e6233d50f"  # [2] 第三方(极致了数据)所需的 Key
+  secret: "8a0p7Up"  # [2] 第三方(极致了数据)所需的 secret
+
